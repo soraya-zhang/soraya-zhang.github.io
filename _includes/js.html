@@ -1,0 +1,24 @@
+</div>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+	{% if page.url == "/index.html" %}
+		<script src="/assets/js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){$("#fullpage").fullpage({anchors:["page-top","about","novels","blog","contact"],verticalCentered:0,scrollBar:!0,menu:"#navmenu"})});
+		</script>
+	{% endif %}
+		<script type="text/javascript">
+			$(window).scroll(function(){$(".navbar").offset().top>50?$(".navbar-fixed-top").addClass("top-nav-collapse"):$(".navbar-fixed-top").removeClass("top-nav-collapse")}),$(".navbar-collapse ul li a").click(function(){$(".navbar-toggle:visible").click()});
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-66841656-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
